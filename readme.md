@@ -406,3 +406,26 @@ At http://pdurbin.pagekite.me/oiosaml_on_glassfish/faces/saml.xhtml (after authe
 "OpenSAML relies heavily on JAXP 1.3 for low-level XML parsing and creation. Some JREs, most notably Sun's, ship with horribly broken JAXP implementations. As such you may (in the Sun JRE case, you must) endorse a different JAXP provider. At the time of this writing, the only known JAXP provider to work is the Apache Xerces & Xalan projects." -- https://wiki.shibboleth.net/confluence/display/OpenSAML/OSTwoUsrManJavaInstall
 
 To set up the java.endorsed.dirs stuff they use maven-dependency-plugin to endorse xml-apis, xercesImpl, xalan, etc.: http://svn.shibboleth.net/view/java-parent-projects/java-parent-project-v3/trunk/pom.xml?view=markup
+
+### EnvironmentCheck before
+
+http://xml.apache.org/xalan-j/faq.html#environmentcheck
+
+    #---- BEGIN writeEnvironmentReport($Revision: 1.8 $): Useful stuff found: ----
+    version.DOM.draftlevel=2.0fd
+    java.class.path=/Applications/NetBeans/glassfish-3.1.2.2/glassfish/modules/glassfish.jar:/Applications/NetBeans/glassfish-3.1.2.2/glassfish/lib/monitor/flashlight-agent.jar
+    version.JAXP=1.1 or higher
+    java.ext.dirs=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/jre/lib/ext:/Applications/NetBeans/glassfish-3.1.2.2/glassfish/domains/domain1/lib/ext:/Applications/NetBeans/glassfish-3.1.2.2/javadb/lib
+    version.xerces2=Xerces-J 2.6.2
+    version.xerces1=not-present
+    version.xalan2_2=Xalan Java 2.6.0
+    version.xalan1=not-present
+    version.ant=Apache Ant(TM) version 1.8.2 compiled on December 20 2010
+    java.version=1.6.0_65
+    version.DOM=2.0
+    version.crimson=not-present
+    sun.boot.class.path=/Applications/NetBeans/glassfish-3.1.2.2/glassfish/modules/endorsed/javax.annotation.jar:/Applications/NetBeans/glassfish-3.1.2.2/glassfish/modules/endorsed/jaxb-api-osgi.jar:/Applications/NetBeans/glassfish-3.1.2.2/glassfish/modules/endorsed/webservices-api-osgi.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar
+    version.SAX=2.0
+    version.xalan2x=not-present
+    #----- END writeEnvironmentReport: Useful properties found: -----
+    # YAHOO! Your environment seems to be OK.
